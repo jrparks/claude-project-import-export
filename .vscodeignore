@@ -1,0 +1,17 @@
+.vscode
+.git
+.gitignore
+out/test/**
+src/test/**
+node_modules/**
+tsconfig.json
+.eslintrc.json
+.github/**
+*.vsix
+**/*.spec.ts
+**/*.md
+!out/**
+!out/extension.js
+!out/extension.js.map
+**/*.md
+.vsix

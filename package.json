@@ -1,0 +1,60 @@
+{
+  "name": "claude-project-import-export",
+  "publisher": "jrparks",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrparks/claude-project-import-export.git"
+  },
+  "displayName": "Claude Project Import-Export",
+  "description": "Import and export entire projects for Claude AI",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "claude-project-import-export.exportProject",
+        "title": "Export Project for Claude"
+      },
+      {
+        "command": "claude-project-import-export.importProject",
+        "title": "Import Claude Project"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^18.19.76",
+    "mocha": "^10.2.0",
+    "glob": "^10.3.10",
+    "@types/vscode": "^1.97.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.56.0",
+    "typescript": "^5.7.3",
+    "vscode-test": "^1.6.1"
+  },
+  "keywords": [
+    "claude",
+    "import",
+    "export",
+    "project"
+  ],
+  "author": "Jason Parks",
+  "license": "MIT"
+}

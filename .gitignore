@@ -1,0 +1,35 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ignore dependency directories
+node_modules/
+vendor/
+venv/
+.env
+
+# Ignore build and output files
+dist/
+build/
+out/
+*out/*
+*.out
+*.o
+*.exe
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+*.iml
+
+# Ignore Claude files
+*.Claude
+
+# Ignore Package Lock
+package-lock.json
